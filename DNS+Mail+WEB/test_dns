@@ -1,0 +1,23 @@
+#! /bin/sh
+
+for h in mm pc
+do
+  echo
+  echo "Test from $h:"
+  himage $h host www.tel.fer.hr
+  himage $h host pc.zpm.fer.hr
+  #  himage $h host -t MX pc.zpm.fer.hr
+  # himage $h host -t ANY org
+  himage $h host -t NS org
+  himage $h host -t NS hr
+done
+
+# for h in mm pc
+# do
+#   echo "Traceroute tests from $h:"
+#   for p in dnsOrg.org hr2.com
+#   do
+#     himage $h traceroute $p
+#   done
+# done
+

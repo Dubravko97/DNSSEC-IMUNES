@@ -1,0 +1,43 @@
+#! /bin/sh
+
+error() {
+    echo $*
+    exit 2
+}
+
+dns_servers="aRootServer bRootServer cRootServer \
+             dnsCom dnsOrg dnsHr hr2 \
+             dnsFer \
+             dnsTel dnsZpm"
+
+hosts="mm www pc zpmMail"
+
+if test $# -eq 1; then
+    eid=$1
+else
+    eid=`himage -e aRootServer`
+    if test $? -ne 0; then
+        exit 1
+    fi
+fi
+
+cd DNS_files
+
+for i in $dns_servers
+do
+    # Stop named on all DNS servers
+    himage ${i}@${eid} killall -9 named 2> /dev/null
+    himage $i@$eid mkdir -p /var/named/etc/namedb
+    hcp $i/* $i@$eid:/var/named/etc/namedb
+    # Start named on all DNS servers
+    echo Starting named on $i...
+    himage $i@$eid named 
+done
+
+echo
+echo Copy/Create resolv.conf on clients:
+for i in $hosts
+do
+    hcp resolv.$i $i@$eid:/etc/resolv.conf 
+done
+
