@@ -333,12 +333,7 @@ node n12 {
     labelcoords {120.0 425.0}
     interface-peer {eth0 n10}
     canvas c0
-    custom-enabled true
-    custom-config {
-	custom-config-id generic
-	custom-command /bin/sh
-	config {{ifconfig eth0 inet 10.0.9.3/24} {} {route -q add -inet 0.0.0.0/0 10.0.9.1} {rm -f /var/run/inetd.pid} {rm -f /var/run/rpcbind.lock} rpcbind inetd {rm -f /var/run/inetd.pid} {rm -f /var/run/rpcbind.lock} {/usr/local/sbin/lighttpd -f /root/Examples/DNS+Mail+WEB/zzt.lighttpd.conf}}
-    }
+    
 }
 
 node n13 {
@@ -507,12 +502,7 @@ node n19 {
     labelcoords {676.0 496.0}
     interface-peer {eth0 n16}
     canvas c0
-    custom-enabled true
-    custom-config {
-	custom-config-id generic
-	custom-command /bin/sh
-	config {{ifconfig eth0 inet 10.0.10.4/24} {} {route -q add -inet 0.0.0.0/0 10.0.10.1} {rm -f /var/run/inetd.pid} {rm -f /var/run/rpcbind.lock} rpcbind inetd {rm -f /var/run/inetd.pid} {rm -f /var/run/rpcbind.lock} {/usr/local/sbin/lighttpd -f /root/Examples/DNS+Mail+WEB/zpm.lighttpd.conf}}
-    }
+    
 }
 
 link l0 {
