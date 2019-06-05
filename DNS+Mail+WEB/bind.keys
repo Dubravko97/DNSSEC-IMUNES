@@ -1,0 +1,104 @@
+# The bind.keys file is used to override the built-in DNSSEC trust anchors
+# which are included as part of BIND 9.  The only trust anchors it contains
+# are for the DNS root zone (".").  Trust anchors for any other zones MUST
+# be configured elsewhere; if they are configured here, they will not be
+# recognized or used by named.
+#
+# To use the built-in root key, set "dnssec-validation auto;" in the
+# named.conf options, or else leave "dnssec-validation" unset.  If
+# "dnssec-validation" is set to "yes", then the keys in this file are
+# ignored; keys will need to be explicitly configured in named.conf for
+# validation to work.  "auto" is the default setting, unless named is
+# built with "configure --disable-auto-validation", in which case the
+# default is "yes".
+#
+# This file is NOT expected to be user-configured.
+#
+# Servers being set up for the first time can use the contents of this file
+# as initializing keys; thereafter, the keys in the managed key database
+# will be trusted and maintained automatically.
+#
+# These keys are current as of Mar 2019.  If any key fails to initialize
+# correctly, it may have expired.  In that event you should replace this
+# file with a current version.  The latest version of bind.keys can always
+# be obtained from ISC at https://www.isc.org/bind-keys.
+#
+# See https://data.iana.org/root-anchors/root-anchors.xml for current trust
+# anchor information for the root zone.
+
+
+managed-keys {
+        # Kljuc kreiran na aRootServer i kopiran u bind.keys
+        . initial-key 257 3 8 "AwEAAfP1M/N1uKVKxez7yi1r9wo7L90SStDfqilyHJUKDQZ9nK1hbXnd
+                dxUNfVwnoCDh5hQ0f9Yjcb+PIxGpN6pHn3ijzlMKkVpyoPyAhUyXOGvo
+                L55XjbicD4ZlouO4kRQ4czsl+AkTLQ4jDvrkzOX1S4iYJzNgKv2O2voW
+                k33CTp+WehEs1GC90T2mmt3QoA++9rFBkpyiHluITd1tXHmXTQRCJMn2
+                MieCN2IMuCHWMAHDHP+LAo1z36NQN3lek6vlByE8LFGD2gUQ9CUdCoMX
+                TAWUPjY51SL2mbAixKQQxL6Kowf8g60JoVX47+8hxUu+Y+vFZ7iOCItM
+                sS3fhOLA6tk=";
+                
+};
+
+
+trusted-keys {
+
+	. 257 3 8 "AwEAAfP1M/N1uKVKxez7yi1r9wo7L90SStDfqilyHJUKDQZ9nK1hbXnd
+                dxUNfVwnoCDh5hQ0f9Yjcb+PIxGpN6pHn3ijzlMKkVpyoPyAhUyXOGvo
+                L55XjbicD4ZlouO4kRQ4czsl+AkTLQ4jDvrkzOX1S4iYJzNgKv2O2voW
+                k33CTp+WehEs1GC90T2mmt3QoA++9rFBkpyiHluITd1tXHmXTQRCJMn2
+                MieCN2IMuCHWMAHDHP+LAo1z36NQN3lek6vlByE8LFGD2gUQ9CUdCoMX
+                TAWUPjY51SL2mbAixKQQxL6Kowf8g60JoVX47+8hxUu+Y+vFZ7iOCItM
+               sS3fhOLA6tk=";
+                    
+
+    hr. 257 3 8 "AwEAAZR2LFjTzxt06QFVAfGp2bVfXsu/4VHh0w8j7/f5Hky5y0rcdodH
+                yp2JziZBQ1j9AFbFLTzGSitJtyziBXCCY9ih5sWu0c0gBzH6ZdUFOlIv
+                vDk9PMSL0SiqgW6nkHZmYAD/QZ5sbpp2yPF+1kEwJdPiNFILuyEeJngn
+                fZDPxjAtFR/we+YoynjjiN7JKyrDaLkLbkbTyOw78JrXNf0bSuMeNpDZ
+                AwZsjqYW0EP4LxuqKb35DZ0H+kXxwMEzymYkHymBZkTQk7PUbbGZ3nfi
+                kKeBDG98L5XlsdQ/uqx0Yb40NopHhWBoXWMt+BRRoRvCPHyojERHGW8M
+                3D4RBjOnlMk=";
+
+    fer.hr. 257 3 8 "AwEAAerUor/t2+6CcEDklYD1x/GGPpu+EOFKrMERScJYyTLirsp3NvyB
+                ea58zkwXdb4V4ez+X6m5PCJ+J4IjFyA3OZqZD7cZHl9Q5SFbDIxTGr79
+                lkmaNrbrjTr8XMbkGjIfNQW/bxcXoFSMZACwUO4plasDevpbL9PeCCIZ
+                5YUCpAkBW34aTMU9OSkTAQAwSHEybSBrKwUot/r/cdrZAjtlYuLDr+Jn
+                UDr5xwI+VMaEv9fEISBdieIaIdf1TvcSgdNBb2+xylY+LoAvIYhl/28t
+                IRvlFsqk0PxG1UDTH3JRNOZbeLgwPXOpUQ9zEjYpGeyr+DYSi61cWNC8
+                dn5CodQfObk=";
+
+    tel.fer.hr. 257 3 8 "AwEAAdaIbMSHp30ZaMR+B+Lb/6hrH2I9vVV02YxZMgWWMy9NWB0CmAm1
+                UGcNFZt7oEK5fOBJ7l3+vAamNsWRdRZMLf52lExVgYH2QG46cs+i1IR+
+                DshCujInfTzyss1auFuMOWzwAHdc1Ok8MRl3p5GVllUjrTSUN3hIaiH3
+                VwffJBDcEWokCngUsCTQC+VwH8conDo104cE4i3TvNMRQsnqz6SG51HA
+                Y+rsJHMJxs9dZilMDct3HlTsaTvQEpkflpFA256dq2K1kr2IPAHS44tQ
+                HhiRwltlJGtU9OhfryGJxIyf9S8B2dJmx2ui29B2tSedE7T/SK1F8hw3
+                8QsldEGkz1s=";
+
+    zpm.fer.hr. 257 3 8 "AwEAAb4e83vQrXz/pOalXGiChdZPsz83Jpw3KqK2eGCB3eN7FC9i5lrd
+                h328l0qbLvGiFRSkefDVzSbZ355MqF7vyvhy5OGo5WFH3IW8volzF5JH
+                jivGC/I146Nx553tkBSiMn7dzkS4WwFOSfImo03NqNj/q6VKj0HvNnt3
+                C+8m0QesEjpE2gi0WlUH1N2FsnKwjAYEEP+mwGn0eBzh7DhFacSA8VT8
+                XeOSHV2jj8Un+R1rpouW4AT/SYlC4SsTJx66HGjElmZcjjh0X/vrTBQ3
+                RlAHY0vxuKIwvNcmDvgPeXAk5X9lBye7ZCjY49LbWd+cTvLrAIR0qRCf
+                j7tSO4Twwb0=";
+                
+    com. 257 3 8 "AwEAAdTLa8DtvOQ8pSXWqgnwiWZnQmCr2qQflRVOsrolkv1iFlD6m0sg /g10FwOu
+				  h9dSQrLNhTHTwH9p1mtXRzx6xzarBVvDwnfsRW7PuWdleriH p2ROT
+				  uwNNofDSjMJSWfPCjPtNuVoAyyYrujJ0AzGb1Yrg5H6l68tj2bD Ru
+				  BTehU9+g5vuo04eWSPnmUyZSgA0W5onkEVNVUr+ZQvW+T0Fhp7eg9/
+				   fS9B3v6i69F1Ue6lTsE+MWdkkF+mh8I/FgCP0lg9FfST3Ub4DT6Hm
+				   chC +1oaRe/4cZne9Y3Kf3JxuQVsqlySjHLeO/rhoqRH0id8oNfjC
+				   C7YYNv4 tlBhtRJE/0M=";
+	
+	org. 257 3 8 "AwEAAdGgf1/HHxeTto33Hbz2UOPlKIVi4IfqXUc10+hd54ssjCqH1AIs J8UlQSLrY
+				  +y6rYwc4J55q23dRMuQ8vQ/ateI5LcmlSn2ENGWg7xnzEAn 6gSW4f
+				  HrxsDvzvX+l7yZVyefjViPQrJz5vAonmiMm3QsYbziwJBw6jQ/ A3a
+				  S1MTtyQ0KAHIQ+z7z/75ZR88JNqA+gv8jb57rDmEAYrKN1the7I+p 
+				  BuBfkJYUADCavfjQOVS6SOJ0kqpU7STmTV/dNyrOfwJjRPEmnBga0F
+				  LD P1YqtTuKQyuV8cq07TDw74RUreYiFDY2Ibt3qJH2Rczso91WiI1
+				  cwVOW 1SVs/gNyNB0=";
+
+};
+
+

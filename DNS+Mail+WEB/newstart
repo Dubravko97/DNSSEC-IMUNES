@@ -21,12 +21,18 @@ else
     fi
 fi
 
-cd DNS_files
-
 for i in $dns_servers
 do
     # Stop named on all DNS servers
     himage ${i}@${eid} killall -9 named 2> /dev/null
+    hcp rndc.key ${i}@${eid}:/usr/local/etc/namedb/rndc.key
+    hcp bind.keys ${i}@${eid}:/usr/local/etc/namedb/bind.keys
+done
+
+cd DNS_files
+
+for i in $dns_servers
+do
     himage $i@$eid mkdir -p /var/named/etc/namedb
     hcp $i/* $i@$eid:/var/named/etc/namedb
     # Start named on all DNS servers

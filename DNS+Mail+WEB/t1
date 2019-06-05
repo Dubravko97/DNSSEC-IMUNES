@@ -1,0 +1,30 @@
+peer {e3 n19}
+    canvas c0
+}
+
+node n19 {
+    type host
+    cpu {{min 0} {max 100} {weight 1}}
+    network-config {
+	hostname zpmMail
+	!
+	interface lo0
+	 type lo
+	 ip address 127.0.0.1/24
+	 ipv6 address ::1/128
+	!
+	interface eth0
+	 ip address 10.0.10.4/24
+	!
+	ip route 0.0.0.0/0 10.0.10.1
+	!
+    }
+    iconcoords {672.0 456.0}
+    labelcoords {676.0 496.0}
+    interface-peer {eth0 n16}
+    canvas c0
+    custom-enabled true
+    custom-config {
+	custom-config-id generic
+	custom-command /bin/sh
+	config {{ifconfig eth0 inet 10.0

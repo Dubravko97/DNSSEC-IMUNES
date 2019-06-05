@@ -1,0 +1,7 @@
+# Do not edit -- this file documents how Postfix was built for your machine.
+SYSTYPE	= FREEBSD4
+AR	= ar
+ARFL	= rv
+RANLIB	= ranlib
+SYSLIBS	= -L/usr/local/lib -lpcre 
+CC	= cc -DHAS_PCR
