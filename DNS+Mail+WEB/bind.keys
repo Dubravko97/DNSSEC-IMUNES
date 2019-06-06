@@ -36,20 +36,9 @@ managed-keys {
                 MieCN2IMuCHWMAHDHP+LAo1z36NQN3lek6vlByE8LFGD2gUQ9CUdCoMX
                 TAWUPjY51SL2mbAixKQQxL6Kowf8g60JoVX47+8hxUu+Y+vFZ7iOCItM
                 sS3fhOLA6tk=";
-                
 };
 
-
 trusted-keys {
-
-	. 257 3 8 "AwEAAfP1M/N1uKVKxez7yi1r9wo7L90SStDfqilyHJUKDQZ9nK1hbXnd
-                dxUNfVwnoCDh5hQ0f9Yjcb+PIxGpN6pHn3ijzlMKkVpyoPyAhUyXOGvo
-                L55XjbicD4ZlouO4kRQ4czsl+AkTLQ4jDvrkzOX1S4iYJzNgKv2O2voW
-                k33CTp+WehEs1GC90T2mmt3QoA++9rFBkpyiHluITd1tXHmXTQRCJMn2
-                MieCN2IMuCHWMAHDHP+LAo1z36NQN3lek6vlByE8LFGD2gUQ9CUdCoMX
-                TAWUPjY51SL2mbAixKQQxL6Kowf8g60JoVX47+8hxUu+Y+vFZ7iOCItM
-               sS3fhOLA6tk=";
-                    
 
     hr. 257 3 8 "AwEAAZR2LFjTzxt06QFVAfGp2bVfXsu/4VHh0w8j7/f5Hky5y0rcdodH
                 yp2JziZBQ1j9AFbFLTzGSitJtyziBXCCY9ih5sWu0c0gBzH6ZdUFOlIv
@@ -67,6 +56,9 @@ trusted-keys {
                 IRvlFsqk0PxG1UDTH3JRNOZbeLgwPXOpUQ9zEjYpGeyr+DYSi61cWNC8
                 dn5CodQfObk=";
 
+    fer.hr. 257 3 8 "AwEAAerUor/t2+6CcEDklYD1x/GGPpu+EOFKrMERScJYyTLirsp3NvyB ea58zkwXdb4V4ez+X6m5PCJ+J4IjFyA3OZqZD7cZHl9Q5SFbDIxTGr79 lkmaNrbrjTr8XMbkGjIfNQW/bxcXoFSMZACwUO4plasDevpbL9PeCCIZ 5YUCpAkBW34aTMU9OSkTAQAwSHEybSBrKwUot/r/cdrZAjtlYuLDr+Jn UDr5xwI+VMaEv9fEISBdieIaIdf1TvcSgdNBb2+xylY+LoAvIYhl/28t IRvlFsqk0PxG1UDTH3JRNOZbeLgwPXOpUQ9zEjYpGeyr+DYSi61cWNC8 dn5CodQfObk=";
+#dodan red iznad
+
     tel.fer.hr. 257 3 8 "AwEAAdaIbMSHp30ZaMR+B+Lb/6hrH2I9vVV02YxZMgWWMy9NWB0CmAm1
                 UGcNFZt7oEK5fOBJ7l3+vAamNsWRdRZMLf52lExVgYH2QG46cs+i1IR+
                 DshCujInfTzyss1auFuMOWzwAHdc1Ok8MRl3p5GVllUjrTSUN3hIaiH3
@@ -82,23 +74,10 @@ trusted-keys {
                 XeOSHV2jj8Un+R1rpouW4AT/SYlC4SsTJx66HGjElmZcjjh0X/vrTBQ3
                 RlAHY0vxuKIwvNcmDvgPeXAk5X9lBye7ZCjY49LbWd+cTvLrAIR0qRCf
                 j7tSO4Twwb0=";
-                
-    com. 257 3 8 "AwEAAdTLa8DtvOQ8pSXWqgnwiWZnQmCr2qQflRVOsrolkv1iFlD6m0sg /g10FwOu
-				  h9dSQrLNhTHTwH9p1mtXRzx6xzarBVvDwnfsRW7PuWdleriH p2ROT
-				  uwNNofDSjMJSWfPCjPtNuVoAyyYrujJ0AzGb1Yrg5H6l68tj2bD Ru
-				  BTehU9+g5vuo04eWSPnmUyZSgA0W5onkEVNVUr+ZQvW+T0Fhp7eg9/
-				   fS9B3v6i69F1Ue6lTsE+MWdkkF+mh8I/FgCP0lg9FfST3Ub4DT6Hm
-				   chC +1oaRe/4cZne9Y3Kf3JxuQVsqlySjHLeO/rhoqRH0id8oNfjC
-				   C7YYNv4 tlBhtRJE/0M=";
-	
-	org. 257 3 8 "AwEAAdGgf1/HHxeTto33Hbz2UOPlKIVi4IfqXUc10+hd54ssjCqH1AIs J8UlQSLrY
-				  +y6rYwc4J55q23dRMuQ8vQ/ateI5LcmlSn2ENGWg7xnzEAn 6gSW4f
-				  HrxsDvzvX+l7yZVyefjViPQrJz5vAonmiMm3QsYbziwJBw6jQ/ A3a
-				  S1MTtyQ0KAHIQ+z7z/75ZR88JNqA+gv8jb57rDmEAYrKN1the7I+p 
-				  BuBfkJYUADCavfjQOVS6SOJ0kqpU7STmTV/dNyrOfwJjRPEmnBga0F
-				  LD P1YqtTuKQyuV8cq07TDw74RUreYiFDY2Ibt3qJH2Rczso91WiI1
-				  cwVOW 1SVs/gNyNB0=";
+
+   com. 257 3 8 "AwEAAdTLa8DtvOQ8pSXWqgnwiWZnQmCr2qQflRVOsrolkv1iFlD6m0sg /g10FwOuh9dSQrLNhTHTwH9p1mtXRzx6xzarBVvDwnfsRW7PuWdleriH p2ROTuwNNofDSjMJSWfPCjPtNuVoAyyYrujJ0AzGb1Yrg5H6l68tj2bD RuBTehU9+g5vuo04eWSPnmUyZSgA0W5onkEVNVUr+ZQvW+T0Fhp7eg9/ fS9B3v6i69F1Ue6lTsE+MWdkkF+mh8I/FgCP0lg9FfST3Ub4DT6HmchC +1oaRe/4cZne9Y3Kf3JxuQVsqlySjHLeO/rhoqRH0id8oNfjCC7YYNv4 tlBhtRJE/0M=";
+
+   org. 257 3 8 "AwEAAdGgf1/HHxeTto33Hbz2UOPlKIVi4IfqXUc10+hd54ssjCqH1AIs J8UlQSLrY+y6rYwc4J55q23dRMuQ8vQ/ateI5LcmlSn2ENGWg7xnzEAn 6gSW4fHrxsDvzvX+l7yZVyefjViPQrJz5vAonmiMm3QsYbziwJBw6jQ/ A3aS1MTtyQ0KAHIQ+z7z/75ZR88JNqA+gv8jb57rDmEAYrKN1the7I+p BuBfkJYUADCavfjQOVS6SOJ0kqpU7STmTV/dNyrOfwJjRPEmnBga0FLD P1YqtTuKQyuV8cq07TDw74RUreYiFDY2Ibt3qJH2Rczso91WiI1cwVOW 1SVs/gNyNB0=";
 
 };
-
 
