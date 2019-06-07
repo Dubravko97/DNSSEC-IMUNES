@@ -1,7 +1,12 @@
-# Do not edit -- this file documents how Postfix was built for your machine.
-SYSTYPE	= FREEBSD4
-AR	= ar
-ARFL	= rv
-RANLIB	= ranlib
-SYSLIBS	= -L/usr/local/lib -lpcre 
-CC	= cc -DHAS_PCR
+#! /bin/sh
+
+for h in mm pc
+do
+  echo
+  echo "Test from $h:"
+  himage $h host www.tel.fer.hr
+  himage $h host pc.zpm.fer.hr
+  himage $h host -t NS org
+  himage $h host -t NS hr
+done
+

@@ -1,15 +1,17 @@
-node n0 {
-    type host
-    cpu {{min 0} {max 100} {weight 1}}
-    network-config {
-	hostname aRootServer
-	!
-	interface lo0
-	 type lo
-	 ip address 127.0.0.1/24
-	 ipv6 address ::1/128
-	!
-	interface eth0
-	 ip address 10.0.0.1/24
-	!
-	ip route 0.0.0.0/0 10.0.0.
+#! /bin/sh
+
+for h in mm pc
+do
+  echo "*****"
+  echo "* Test from $h:"
+  echo "*"
+  himage $h host -t ANY www.tel.fer.hr
+  echo ""
+  himage $h host -t ANY pc.zpm.fer.hr
+  echo ""
+  himage $h host -t NS org
+  echo ""
+  himage $h host -t NS hr
+  echo ""
+done
+
