@@ -1,4 +1,4 @@
-; Tu cu ubaciti SOA
+; zpm
 ;
 $TTL 60000
 @ IN SOA dnsZpm.zpm.fer.hr. root.dnsZpm.zpm.fer.hr (
@@ -18,4 +18,7 @@ www       IN  CNAME zpmMail.zpm.fer.hr.
 
 @        IN  MX  10  zpmMail.zpm.fer.hr.
 pc       IN  MX  10  zpmMail.zpm.fer.hr.
+
+zpm.fer.hr. IN DS 57802 8 1 357C1BFF0073D6F4A3792C5B3A83D9E490B74853 
+zpm.fer.hr. IN DS 57802 8 2 4BA423ED40F29533BBD808AA7F024CC31FE8929284C95D8868994A829C58516B
 

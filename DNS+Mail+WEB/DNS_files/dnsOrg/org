@@ -13,3 +13,6 @@ dnsOrg.Org.              IN  A     10.0.14.2
 blabla.org.              IN  NS    dnsBlaBla.blabla.org.
 dnsBlaBla.blabla.org.    IN  A     10.10.7.2
 
+org. IN DS 62245 8 1 5F1921F29DA23DF1CC59FD7B82E0EFD4DF69A0EB 
+org. IN DS 62245 8 2 C227BF90468B0BDB0777244401D2B1EC64ED8C47265C1F493D6CAEEB73C0FA29
+

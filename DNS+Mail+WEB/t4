@@ -1,17 +1,23 @@
 #! /bin/sh
 
-echo dnsTel:
-himage dnsTel delv @127.0.0.1 www.tel.fer.hr A +multiline
+echo ""
+echo 'Ako je u named.conf postavljeno "recursion no;" javljat ce greske'
+echo ""
 
-echo dnsTel:
-himage dnsTel delv @127.0.0.1 www.zpm.fer.hr A +multiline
-
-echo dnsZpm:
-himage dnsTel delv @127.0.0.1 www.zpm.fer.hr A +multiline
-
-echo dnsZpm:
-himage dnsZpm delv @127.0.0.1 www.tel.fer.hr A +multiline
-
-# echo mm:
-# himage mm delv @10.0.9.2 www.tel.fer.hr A +multiline
+for test in "himage aRootServer delv @127.0.0.1 . NS +multiline" \
+            "himage aRootServer delv @127.0.0.1 hr NS +multiline" \
+            "himage dnsHr delv @127.0.0.1 . NS +multiline" \
+            "himage dnsHr delv @127.0.0.1 hr NS +multiline" \
+            "himage dnsTel delv @127.0.0.1 www.tel.fer.hr A +multiline" \
+            "himage dnsTel delv @127.0.0.1 www.zpm.fer.hr A +multiline" \
+            "himage dnsTel delv @127.0.0.1 www.zpm.fer.hr A +multiline" \
+            "himage dnsZpm delv @127.0.0.1 www.tel.fer.hr A +multiline" \
+            "himage mm delv @10.0.9.10 www.tel.fer.hr A +multiline" \
+            "himage mm delv www.zpm.fer.hr A +multiline" \
+            "himage pc delv www.tel.fer.hr A +multiline"
+do
+    echo ""
+    echo $test
+    eval $test
+done
 

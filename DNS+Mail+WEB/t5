@@ -1,0 +1,14 @@
+#! /bin/sh
+
+echo aRootServer:
+himage aRootServer delv @127.0.0.1 +root=. . SOA
+
+echo dnsHr:
+himage dnsHr delv @127.0.0.1 +root=hr hr SOA
+himage dnsHr delv @127.0.0.1 +root=hr hr SOA
+
+echo dnsFer:
+himage dnsFer delv @127.0.0.1 +root=fer.hr fer.hr SOA
+
+echo dnsTel:
+himage dnsTel delv @127.0.0.1 +root=tel.fer.hr tel.fer.hr SOA

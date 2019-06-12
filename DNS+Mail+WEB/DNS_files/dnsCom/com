@@ -1,4 +1,4 @@
-; Tu cu ubaciti SOA
+; com
 ;
 $TTL 60000
 @ IN SOA dnsMM.mm.com. root.dnsMM.mm.com. (
@@ -19,4 +19,7 @@ dnsNesto.nesto.com. IN  A    10.10.6.2
 
 mm.com.             IN  NS   dnsMM.mm.com.
 dnsMM.mm.com.       IN  A    10.1.1.1
+
+com. IN DS 6136 8 1 176300EA75D96E8871AA145B4E079908FCBE28C4 
+com. IN DS 6136 8 2 A0899A922A65FB86D7002163542105B2BBED2492F391527FB5D4596F7B31DAB5
 

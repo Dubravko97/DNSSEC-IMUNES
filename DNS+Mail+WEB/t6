@@ -1,0 +1,21 @@
+#! /bin/sh
+
+echo ""
+echo 'Javlja "out of zone" ako je u named.conf "recursion no;"'
+echo ""
+
+echo aRootServer:
+himage aRootServer named-checkzone . /var/named/etc/namedb/root
+
+echo dnsHr:
+himage dnsHr named-checkzone hr /var/named/etc/namedb/hr
+
+echo dnsFer:
+himage dnsFer named-checkzone fer.hr /var/named/etc/namedb/fer
+
+echo dnsTel:
+himage dnsTel named-checkzone tel.fer.hr /var/named/etc/namedb/tel
+
+echo dnsZpm:
+himage dnsZpm named-checkzone zpm.fer.hr /var/named/etc/namedb/zpm
+

@@ -1,4 +1,4 @@
-; Tu cu ubaciti SOA
+; tel
 ;
 $TTL 60000
 @ IN SOA dnsTel.tel.fer.hr. root.dnsTel.tel.fer.hr (
@@ -17,4 +17,7 @@ mm        IN  A    10.0.9.4
 
 @      IN MX 10  www.tel.fer.hr.
 mm     IN MX 10  www.tel.fer.hr.
+
+tel.fer.hr. IN DS 37201 8 1 9F72A0C55ABA3B44A6CF65BA6043EDFBCD612B1D 
+tel.fer.hr. IN DS 37201 8 2 5E2113CD53FBF735B5B2830D0C8D2D27E342D4DC7F38A2E0597CF5AF43AC97F1
 

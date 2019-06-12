@@ -1,40 +1,16 @@
-# The bind.keys file is used to override the built-in DNSSEC trust anchors
-# which are included as part of BIND 9.  The only trust anchors it contains
-# are for the DNS root zone (".").  Trust anchors for any other zones MUST
-# be configured elsewhere; if they are configured here, they will not be
-# recognized or used by named.
-#
-# To use the built-in root key, set "dnssec-validation auto;" in the
-# named.conf options, or else leave "dnssec-validation" unset.  If
-# "dnssec-validation" is set to "yes", then the keys in this file are
-# ignored; keys will need to be explicitly configured in named.conf for
-# validation to work.  "auto" is the default setting, unless named is
-# built with "configure --disable-auto-validation", in which case the
-# default is "yes".
-#
-# This file is NOT expected to be user-configured.
-#
-# Servers being set up for the first time can use the contents of this file
-# as initializing keys; thereafter, the keys in the managed key database
-# will be trusted and maintained automatically.
-#
-# These keys are current as of Mar 2019.  If any key fails to initialize
-# correctly, it may have expired.  In that event you should replace this
-# file with a current version.  The latest version of bind.keys can always
-# be obtained from ISC at https://www.isc.org/bind-keys.
-#
-# See https://data.iana.org/root-anchors/root-anchors.xml for current trust
-# anchor information for the root zone.
-
-
 managed-keys {
-        # Kljuc kreiran na aRootServer i kopiran u bind.keys
-        . initial-key 257 3 8 "AwEAAfP1M/N1uKVKxez7yi1r9wo7L90SStDfqilyHJUKDQZ9nK1hbXnd
-                dxUNfVwnoCDh5hQ0f9Yjcb+PIxGpN6pHn3ijzlMKkVpyoPyAhUyXOGvo
-                L55XjbicD4ZlouO4kRQ4czsl+AkTLQ4jDvrkzOX1S4iYJzNgKv2O2voW
-                k33CTp+WehEs1GC90T2mmt3QoA++9rFBkpyiHluITd1tXHmXTQRCJMn2
-                MieCN2IMuCHWMAHDHP+LAo1z36NQN3lek6vlByE8LFGD2gUQ9CUdCoMX
-                TAWUPjY51SL2mbAixKQQxL6Kowf8g60JoVX47+8hxUu+Y+vFZ7iOCItM
-                sS3fhOLA6tk=";
+    # Kljuc kreiran na aRootServer (key-signing-key) i kopiran u bind.keys
+. initial-key 257 3 8  "AwEAAcEFup6PUjDn/WxDAjYqIzns7/AE9EJ7/rx00Ae8Dr5P3xja7JTW
+						5xMAiChw5YTldmjLF85ZqFCec1UZlcCp0QzZH32anXOOt/7YcnbPaO2/
+						6VzGZGt4NVQ2dSPRPn8L1h0g1VBmaXT9RYZQdsneDgGawAU+vsen7puf
+						xCfjvMcwtZI62mKXobjAWhPIBXGpW4RAMTSp2QYyjIW7BlGtv832m+SR
+						h/9sbStUaO4bUswNJymbsXtpJGrHIcMekrzmXra+RVQIRVo7QBcWkcIa
+						9w5q/KZ4/00iAzGwc6JEEZ37bfcw8p+BAQV8mEKmwad5/xzM9KgDhzXI
+						QkiqiCA2TzmhfOqCTuH+AJLGzUVeFg1330knBcqT3JfA9wF0b63ZoA2+
+						p2x9PysWzg14mLTLTHX9HV8SCyuRCp4sdYSvluHwxETpWjQKbFaK9ILx
+						9zlIMYz5L/gUdBZYa/JDu4g3cNmOEG4TLCWZbWF+be8A5a+W8LD31H4S
+						IEoMA6vZab3WA7I6Nh4PzAZxGvvf4VB7UNfFYZphFYKSa5GQcqFUFp8g
+						mjY61sYZ7HQ1WTUquZeDpRRlQk5QjmbnV8461yMwMHaYtm6oHmF7OdPs
+						kerLLf9xwV0az3PI39mzsSF+7ludj+653RUooc55eX2YcMKiVVVMjgI+
+						PWzLt6RmnmqyetaH";
 };
-

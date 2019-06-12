@@ -5,10 +5,8 @@ error() {
     exit 2
 }
 
-dns_servers="aRootServer bRootServer cRootServer \
-             dnsCom dnsOrg dnsHr hr2 \
-             dnsFer \
-             dnsTel dnsZpm"
+dns_servers="aRootServer bRootServer cRootServer dnsCom dnsOrg \
+             dnsHr hr2 dnsFer dnsTel dnsZpm cache"
 
 hosts="mm www pc zpmMail"
 
@@ -26,6 +24,10 @@ do
     # Stop named on all DNS servers
     himage ${i}@${eid} killall -9 named 2> /dev/null
     hcp rndc.key ${i}@${eid}:/usr/local/etc/namedb/rndc.key
+done
+
+for i in $dns_servers $hosts
+do
     hcp bind.keys ${i}@${eid}:/usr/local/etc/namedb/bind.keys
 done
 
